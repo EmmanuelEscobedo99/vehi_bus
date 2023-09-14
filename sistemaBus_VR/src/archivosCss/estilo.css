@@ -1,0 +1,134 @@
+*{
+
+    margin:0 ;
+    padding:0 ;
+    box-sizing:borde-box;
+ 
+ }
+ 
+ 
+ .titulo{
+      margin-top: 20px;
+        
+ }
+ 
+ .btn-busqueda{
+  position: relative;    
+  width: 400px;
+  margin-left: 750px;
+  
+ }
+ 
+ 
+ 
+ .container {
+  margin-top: 20px;   
+  max-width: 1300px;
+  width: 100%;
+  top: 0px;
+  padding: 0px 20px;
+ 
+ 
+ }
+ 
+ 
+ 
+ section{
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ 
+ 
+ }
+ 
+ h3{
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+ }
+ 
+ .cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between ;
+  align-items: center;
+ 
+ }
+ 
+ 
+ .card{
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  width: 100%;
+  background: rgb(245, 241, 241);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: .3s;
+  border: 3px solid transparent;
+ }
+ 
+ 
+ .card:hover{
+     border-color: rgb(152, 151, 153);
+ 
+ }
+ 
+ 
+ .btn{
+      border: none;
+      outline: none;
+      margin: 8px;
+      background: rgb(110, 140, 238);
+      color: rgb(248, 242, 242);
+      border-radius: 10px;
+      max-width: 120px;
+      width: 1000px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: .3s;
+      border: 1px solid rgb(7, 63, 248);
+    
+    }
+ 
+ 
+ 
+ 
+ .btn:hover{
+   background: transparent;
+   color: rgb(55, 55, 218); 
+ 
+ }
+ 
+ 
+ @media (max-width:969px){
+  section{
+     padding: 20px 0px;
+  }
+ 
+  h1{
+     font-size: 30px;
+     line-height: 40px;
+  }
+  .card{
+     flex: 0 0 calc(50% - 20%);
+     max-width: calc(50% - 20%);
+  }
+ 
+ 
+ }
+ 
+ 
+ @media (max-width:600px){
+    
+     .card{
+        flex: 0 0 100%;
+        max-width: 100%;
+     }  
+    
+    }
